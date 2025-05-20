@@ -23,7 +23,7 @@ const Registration = () => {
     mutationFn: registrationUser,
     onSuccess: (userData) => {
       login(userData);
-      navigate("/quiz");
+      navigate("/chooselevel");
     },
     onError: () => {
       setError("root", {message: "something is wrong"});
@@ -41,14 +41,14 @@ const Registration = () => {
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className="mt-[43px]">
         <div className="flex flex-col gap-[9px]">
-          <label className="text-[14px] cursor-pointer" htmlFor="email">
-            Email
+          <label className="text-[14px] cursor-pointer" htmlFor="userName">
+            userName
           </label>
           <input
-            className="px-[16px] border border-[#E1E1E1] focus:border-[#4280EF] rounded-[8px] outline-none w-full max-w-[342px] min-h-[48px]"
-            type="email"
-            placeholder="example@gmail.com"
-            id="email"
+            className="px-[16px] border border-[#717171] focus:border-[#4280EF] rounded-[8px] outline-none w-full max-w-[342px] min-h-[48px]"
+            type="text"
+            placeholder="Saba Vardosanidze"
+            id="userName"
             {...register("userName")}
           />
           <p className="text-[12px] text-red-600 italic">
@@ -60,7 +60,7 @@ const Registration = () => {
             Password
           </label>
           <input
-            className="px-[16px] border border-[#E1E1E1] focus:border-[#4280EF] rounded-[8px] outline-none w-full max-w-[342px] min-h-[48px]"
+            className="px-[16px] border border-[#717171] focus:border-[#4280EF] rounded-[8px] outline-none w-full max-w-[342px] min-h-[48px]"
             type="Password"
             placeholder="password"
             id="Password"
