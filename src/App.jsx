@@ -4,6 +4,7 @@ import Quiz from "./view/quiz/Quiz";
 import PrivateRoute from "./routes/PrivateRoute";
 import ChooseLevel from "./view/chooseLevel/ChooseLevel";
 import QuizMedium from "./view/quiz/QuizMedium";
+import QuizHardPage from "./view/quiz/QuizHardPage";
 
 const App = () => {
   return (
@@ -31,6 +32,14 @@ const App = () => {
           element={
             <PrivateRoute>
               <QuizMedium />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/hardQuiz"
+          element={
+            <PrivateRoute>
+              <QuizHardPage />
             </PrivateRoute>
           }
         />

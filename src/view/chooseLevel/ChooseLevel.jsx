@@ -14,9 +14,11 @@ const ChooseLevel = () => {
             Medium
           </button>
         </Link>
-        <button className="flex justify-center items-center hover:bg-red-50 border border-red-700 rounded-[10px] w-[150px] h-[60px] text-[21px] text-red-700 transition-all duration-300 ease-in-out cursor-pointer">
-          Hard
-        </button>
+        <Link to={"/hardQuiz"}>
+          <button className="flex justify-center items-center hover:bg-red-50 border border-red-700 rounded-[10px] w-[150px] h-[60px] text-[21px] text-red-700 transition-all duration-300 ease-in-out cursor-pointer">
+            Hard
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -83,9 +83,11 @@ const Header = () => {
                         <a href="#footer">Medium</a>
                       </li>
                     </Link>
-                    <li className="text-[var(--paragraph-color)] hover:text-[var(--colorBlack)] transition duration-300 ease-in-out cursor-pointer">
-                      <a href="#footer">Hard</a>
-                    </li>
+                    <Link to={"/hardQuiz"}>
+                      <li className="text-[var(--paragraph-color)] hover:text-[var(--colorBlack)] transition duration-300 ease-in-out cursor-pointer">
+                        <a href="#footer">Hard</a>
+                      </li>
+                    </Link>
                   </ul>
                 </motion.div>
               ) : (
